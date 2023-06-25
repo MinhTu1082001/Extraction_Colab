@@ -60,7 +60,7 @@ def generate_annotations(path: str):
                         txt = elem['text'].split()
                         full_length = len(elem['text'])
                         # get bounding box
-                        # important: each bounding box should be in (upper left, lower right) format
+                        # each bounding box should be in (upper left, lower right) format
                         # it took me some time to understand the upper left is (x1, y3)
                         # and the lower right is (x3, y1)
                         td1, td2, td3, td4 = elem['polys']
